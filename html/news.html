@@ -156,7 +156,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer-container">
+<footer class="footer-container">
   <div class="footer">
     <section class="info">
       <div class="logo">
@@ -177,7 +177,7 @@
       </div>
     </section>
     <section class="menu">
-      <div>меню</div>
+      <div onclick="footerMenuShow(this)">меню <i class="fas fa-sort-down"></i></div>
       <ul class="menu-list">
         <li><a href="./main.html" class="common-link">главная</a></li>
         <li><a href="#" class="common-link">о компании</a></li>
@@ -190,7 +190,7 @@
       </ul>
     </section>
     <section class="products-home">
-      <div>продукция для дома</div>
+      <div onclick="footerMenuShow(this)">продукция для дома <i class="fas fa-sort-down"></i></div>
       <ul class="products-home-list">
         <li><a href="./catalog.html" class="common-link">кухни(коллекция)</a></li>
         <li><a href="./catalog.html" class="common-link">шкафы-купе</a></li>
@@ -204,7 +204,7 @@
       </ul>
     </section>
     <section class="products-business">
-      <div>продукция для бизнеса</div>
+      <div onclick="footerMenuShow(this)">продукция для бизнеса <i class="fas fa-sort-down"></i></div>
       <ul class="products-business-list">
         <li><a href="./catalog.html" class="common-link">офисная мебель</a></li>
         <li><a href="./catalog.html" class="common-link">ученическая мебель</a></li>
@@ -225,6 +225,7 @@
     </section>
   </div>
 </footer>
+
 
   <form action="#" class="callback-form">
     <div class="name">Отправьте нам сообщение</div>

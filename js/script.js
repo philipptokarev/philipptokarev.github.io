@@ -9,7 +9,9 @@ function menuClick(){
   $("#menuFull").toggleClass("menuShow");
   $("#menuFull").toggleClass("menuHide");
 }
-
+function footerMenuShow(el){
+  $(el).parent().find("ul").toggle();
+}
 function cityClick(){
   var c = $(".city b.name").text();
   $(".city b.name").text(city);
