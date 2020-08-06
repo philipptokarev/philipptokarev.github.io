@@ -1,21 +1,19 @@
-body {
+﻿body {
   margin: 0;
   padding: 0;
 }
 body a {
   text-decoration: none;
 }
-
 .grid-container {
   display: grid;
   font-family: Montserrat;
   grid-template-areas: "header" "main" "footer";
 }
-
 .main {
   grid-area: main;
   display: grid;
-  grid-template-areas: "main-header" "breadcrumbs" "catalog" "portfolio" "benefits" "new-products" "about-us" "interesting" "news" "promotions" "delivery" "map-area" "request" "partners";
+  grid-template-areas: "main-header" "breadcrumbs" "about-company" "catalog" "portfolio" "benefits" "new-products" "about-us" "interesting" "news" "promotions" "search" "delivery" "map-area" "request" "partners";
 }
 .main .header-container {
   grid-area: main-header;
@@ -187,7 +185,7 @@ body a {
   margin-left: 5px;
   font-size: 20px;
   color: white;
-  transition: transform .3s;
+  transition: transform 0.3s;
   transform-origin: center center;
   height: 28px;
 }
@@ -747,7 +745,7 @@ body a {
   z-index: -1;
   font-size: 375px;
   font-weight: 700;
-  line-height: 500  px;
+  line-height: 500 px;
   color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
 }
@@ -839,13 +837,11 @@ body a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, border 0.4s;
 }
-.main .catalog-container .content .filter .filter-item .polzunok-container-5 .ui-slider .ui-slider-handle:hover,
-.main .catalog-container .content .filter .filter-item .polzunok-container-5 .ui-slider .ui-slider-handle:focus {
+.main .catalog-container .content .filter .filter-item .polzunok-container-5 .ui-slider .ui-slider-handle:hover, .main .catalog-container .content .filter .filter-item .polzunok-container-5 .ui-slider .ui-slider-handle:focus {
   transform: scale(1);
   border: 9px solid #dfa524;
 }
-.main .catalog-container .content .filter .filter-item .polzunok-input-5-left,
-.main .catalog-container .content .filter .filter-item .polzunok-input-5-right {
+.main .catalog-container .content .filter .filter-item .polzunok-input-5-left, .main .catalog-container .content .filter .filter-item .polzunok-input-5-right {
   height: 32px;
   background: #FFF;
   border-radius: 10px;
@@ -1284,7 +1280,7 @@ body a {
   justify-content: center;
   color: white;
   cursor: default;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 .main .portfolio .portfolio-body .portfolio-images .image-container .image-name:hover {
   opacity: 1;
@@ -1552,7 +1548,7 @@ body a {
   font-weight: 700;
   top: 0;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
 }
 .main .interesting .flex-row .article-item .item-image {
   position: absolute;
@@ -1618,7 +1614,7 @@ body a {
 .main .partners .flex-row .part-img img:hover {
   filter: none;
   opacity: 1;
-  transition: opacity .9s, filter .5s;
+  transition: opacity 0.9s, filter 0.5s;
 }
 .main .partners .partners-background {
   width: 100%;
@@ -2202,12 +2198,362 @@ body a {
   transform-origin: left;
   width: 700px;
 }
+.main .search {
+  position: relative;
+  grid-area: search;
+  display: grid;
+  grid-template-areas: "title" "search-products" "search-news";
+}
+.main .search .title {
+  color: #dfa524;
+  font-size: 40px;
+  grid-area: title;
+}
+.main .search .search-products {
+  margin-bottom: 100px;
+  grid-area: search-products;
+}
+.main .search .search-products .title {
+  color: #000;
+}
+.main .search .search-products .card-mesh {
+  grid-template-columns: repeat(3, 1fr);
+}
+.main .search .search-news {
+  margin-bottom: 100px;
+  grid-area: search-news;
+}
+.main .search .search-news .title {
+  color: #000;
+}
+.main .search .search-news .card-mesh {
+  grid-template-columns: repeat(4, 1fr);
+}
+.main .search .search-products .card-mesh, .main .search .search-news .card-mesh {
+  display: grid;
+  grid-column-gap: 2vw;
+  margin-bottom: 50px;
+}
+.main .search .search-products .card-mesh .item, .main .search .search-news .card-mesh .item {
+  background: white;
+  box-shadow: 0px 7px 35px -30px black;
+  width: 100%;
+}
+.main .search .search-products .card-mesh .item .img-container, .main .search .search-news .card-mesh .item .img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.main .search .search-products .card-mesh .item .img-container img, .main .search .search-news .card-mesh .item .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.main .search .search-products .card-mesh .item .date, .main .search .search-news .card-mesh .item .date {
+  padding: 10px;
+  color: #ccc;
+  width: 100px;
+  border-bottom: 1px solid white;
+}
+.main .search .search-products .card-mesh .item .name, .main .search .search-news .card-mesh .item .name {
+  color: #dfa524;
+  font-weight: 700;
+  margin: 10px;
+  font-size: 18px;
+}
+.main .search .search-products .card-mesh .item .description, .main .search .search-news .card-mesh .item .description {
+  margin: 10px;
+  font-size: 14px;
+}
+.main .search .search-products .card-mesh .item .button-link, .main .search .search-news .card-mesh .item .button-link {
+  margin: 10px;
+}
+.main .search .search-products .card-mesh .item:hover .date, .main .search .search-news .card-mesh .item:hover .date {
+  border-bottom: 1px solid #ccc;
+}
+@media (max-width: 1100px) {
+  .main .search .search-products .card-mesh, .main .search .search-news .card-mesh {
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+  }
+}
+.main .search .button-link.reverse {
+  border: 1px solid #dfa524;
+  background: none;
+  color: #dfa524;
+}
+.main .search .button-link.reverse:hover {
+  background: #dfa524;
+  color: #fff;
+}
+.main .search .background {
+  width: 100vw;
+  font-size: 375px;
+  background: #6081D7;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 450px;
+  line-height: 250px;
+  max-width: unset;
+  font-weight: 700;
+}
+@media (max-width: 1100px) {
+  .main .search .background {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .main .search > * {
+  }
+}
+.main .search > * {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main .about-company {
+  margin: 150px auto 0;
+  max-width: 1100px;
+  grid-area: about-company;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 5vw;
+}
+.main .about-company .about-director {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .about-company .about-director .text {
+  font-weight: 500;
+  width: 80%;
+}
+.main .about-company .about-director .team-info {
+  text-align: center;
+  color: white;
+  padding: 25px 10px;
+  background: #222;
+  margin-top: 150px;
+  margin-left: 10%;
+  width: 30%;
+}
+.main .about-company .about-director .team-info img {
+  width: 100%;
+}
+.main .about-company .about-director .team-info .job {
+  color: #999;
+}
+.main .about-company .about-director .team-info .video {
+  color: white;
+}
+.main .about-company .about-director .team-info .video:hover {
+  color: #dfa524;
+}
+.main .about-company .about-director .team-info .video .fa-play-circle {
+  display: block;
+  font-size: 30px;
+}
+.main .about-company .about-director .team-image {
+  position: relative;
+  padding-top: 70%;
+  width: 60%;
+}
+.main .about-company .about-director .team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 1100px) {
+  .main .about-company .about-director {
+    grid-template-columns: 1fr;
+  }
+  .main .about-company .about-director .text {
+    padding: 0;
+    width: 100%;
+  }
+  .main .about-company .about-director > .flex-row {
+    flex-direction: column-reverse;
+  }
+  .main .about-company .about-director > .flex-row .team-image {
+    width: 100%;
+    padding-top: calc((70/50)*100%);
+  }
+  .main .about-company .about-director > .flex-row .team-info {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+  }
+  .main .about-company .about-director > .flex-row .team-info img {
+    max-width: 200px;
+  }
+}
+.main .about-company .company-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .about-company .company-history .img-container {
+  width: 80%;
+  padding-top: 100%;
+  position: relative;
+}
+.main .about-company .company-history .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+.main .about-company .company-history .history {
+  width: 90%;
+  margin-left: 10%;
+  padding: 50px 0;
+}
+.main .about-company .company-history .history .title {
+  font-size: 40px;
+}
+.main .about-company .management .title {
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+}
+.main .about-company .management .card-mesh {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vw;
+}
+.main .about-company .management .card-mesh .card-item {
+  position: relative;
+}
+.main .about-company .management .card-mesh .card-item .card-image {
+  position: relative;
+  width: 100%;
+  padding-top: 140%;
+}
+.main .about-company .management .card-mesh .card-item .card-image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.main .about-company .management .card-mesh .card-item .card-info {
+  width: 90%;
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px 0 20px 20px;
+}
+.main .about-company .management .card-mesh .card-item .card-info a.name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin-bottom: 10px;
+}
+.main .about-company .management .card-mesh .card-item .card-info a.name:hover {
+  color: #dfa524;
+}
+.main .about-company .management .card-mesh .card-item .card-info .contact-info a {
+  color: #666;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.main .about-company .management .card-mesh .card-item .card-info .contact-info a:hover {
+  color: #dfa524;
+}
+@media (max-width: 1100px) {
+  .main .about-company .management .card-mesh {
+    grid-template-columns: 1fr;
+  }
+}
+.main .about-company .thanks-letters .title {
+  color: #000;
+  font-size: 40px;
+}
+.main .about-company .thanks-letters .letters-mesh {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container {
+  position: relative;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container #letters-slider .letters-slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container #letters-slider .letters-slide .letter {
+  position: relative;
+  width: 100%;
+  padding-top: 150%;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container #letters-slider .letters-slide .letter img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .letter-arrow-right, .main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .letter-arrow-left {
+  cursor: pointer;
+  font-size: 50px;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .letter-arrow-right:hover, .main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .letter-arrow-left:hover {
+  color: #dfa524;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .numeration {
+  position: relative;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .numeration .letter-pagingInfo {
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  background: #dfa524;
+}
+.main .about-company .thanks-letters .letters-mesh .letters-slider-container .slider-help .numeration .letter-amount {
+  position: absolute;
+  top: -30px;
+  left: calc(50%);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+@media (max-width: 1100px) {
+  .main .about-company {
+    margin: 0;
+    padding: 0 5px;
+  }
+}
 @media (max-width: 1100px) {
   .main .title {
     font-size: 32px !important;
   }
 }
-
 .header {
   padding: 25px 5px;
   grid-area: header;
@@ -2244,7 +2590,7 @@ body a {
   margin-left: 5px;
   font-size: 20px;
   color: white;
-  transition: transform .3s;
+  transition: transform 0.3s;
   transform-origin: center center;
   height: 28px;
   color: #dfa524;
@@ -2449,7 +2795,6 @@ body a {
     width: auto;
   }
 }
-
 .footer-container {
   background: black;
   grid-area: footer;
@@ -2634,7 +2979,6 @@ body a {
     padding: 20px 10px;
   }
 }
-
 .common-link {
   color: black;
 }
@@ -2642,22 +2986,18 @@ body a {
   border-bottom: 2px solid #dfa524;
   padding-bottom: 7px;
 }
-
 .fas, .far {
   color: #dfa524;
   padding-right: 5px;
 }
-
 .flex-column {
   display: flex;
   flex-direction: column;
 }
-
 .flex-row {
   display: flex;
   flex-direction: row;
 }
-
 .callback-form {
   width: 280px;
   display: none;
@@ -2734,7 +3074,6 @@ body a {
   border: 3px solid #b0821c;
   cursor: pointer;
 }
-
 .callback-form.show {
   display: block;
 }
