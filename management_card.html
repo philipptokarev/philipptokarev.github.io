@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Производство</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=22712c87-35d7-4039-92a1-ef8a7f63831a" type="text/javascript"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,400&amp;display=swap'>
+  <link rel='stylesheet' href='../fontawesome-pro-5.9.0-web/css/all.css'>
+  <link rel='stylesheet' href='../slick-1.8.1/slick/slick.css'>
+  <link rel='stylesheet' href='../slick-1.8.1/slick/slick-theme.css'>
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div class="grid-container">
+  <header class="header">
+    <section class="info">
+      <div class="logo">
+        <a href="./main.html"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
+      </div>
+      <div class="city">
+            <i class="fas fa-map-marker-alt"  onclick="cityClick()"></i>
+            <span onclick="cityClick()">Ваш город:</span>
+            <b class="name" onclick="cityClick()">Москва</b>
+            <i class="fas fa-sort-down"  onclick="cityClick()"></i>
+            <div class="cityList">
+              <div onclick="chooseCity(this)">Москва</div>
+              <div onclick="chooseCity(this)">Санкт-Петербург</div>
+              <div onclick="chooseCity(this)">Казань</div>
+              <div onclick="chooseCity(this)">Екатеринбург</div>
+              <div onclick="chooseCity(this)">Нижний Новорогод</div>
+              <div onclick="chooseCity(this)">Сочи</div>
+              <div onclick="chooseCity(this)">Новосибирск</div>
+            </div>
+          </div>
+      <div class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone-volume"></i>
+        <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
+      </div>
+      <button class="order-call" onclick="callForm()">Заказать звонок</button>
+    </section>
+    <nav class="nav-bar">
+      <div class="nav-menu">
+        <i class="far fa-bars" onclick="menuClick()"></i>
+        <div class="menuShow" id="menuShort"  onclick="menuClick()">Меню</div>
+        <div class="menuHide" id="menuFull">
+          <a href="#" class="menu-link">О компании</a>
+          <a href="./promotions.html" class="menu-link">Акции</a>
+          <a href="./news.html" class="menu-link">Новости</a>
+          <a href="#" class="menu-link">Дизайнерам</a>
+          <a href="./delivery" class="menu-link">Доставка</a>
+          <a href="#" class="menu-link">Контакты</a>
+        </div>
+      </div>
+      <div class="nav-catalog-portfolio">
+        <a href="./catalog.html" class="common-link">Каталог</a>
+        <a href="#" class="common-link">Портфолио</a>
+      </div>
+      <div class="nav-search">
+        <i class="far fa-search"></i>
+        <input class="input-search" placeholder="Поиск">
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <nav class="breadcrumbs">
+      <a href="./main.html" class="crumb">Главная</a> / <a href="#" class="crumb">О компании</a> / <a href="#" class="crumb">Руководство</a> / <a href="#" class="active crumb">Гимадеев Марс Васильевич</a>
+    </nav>
+    <section class="about-employee">
+      <div class="bio">
+        <h1 class="title">Руководство</h1>
+        <div class="flex-row">
+          <div class="img-container">
+            <img src="https://i.ibb.co/HnNqYNM/2020-05-21-21-37-28.png" alt="">
+          </div>
+          <div class="description">
+            <div class="name">Гимадеев Марс Васильевич</div>
+            <div class="position">Директор</div>
+            <div class="info">
+              <div class="title">Краткая информация</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque excepturi veniam, fugiat beatae voluptates delectus obcaecati vitae molestiae adipisci. Tenetur quis culpa placeat, eveniet iusto aperiam, reiciendis minus harum impedit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iusto vel porro consequatur a unde dolor eaque accusamus quo earum!</p>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+            <div class="contact">
+              <div class="title">Контакты</div>
+              <div class="email">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
+              </div>
+              <div class="phone">
+                <i class="fas fa-phone-volume"></i>
+                <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
+              </div>
+              <div class="social-links">
+                <a href="/"><i class="fab fa-facebook-f"></i></a>
+                <a href="/"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="title">Благодарственные письма</h1>
+        <div class="thanks-letters">
+          <div class="letter-container">
+            <img src="https://woman-gu.ru/wp-content/uploads/2018/11/thanks-for-good-work-2.jpg" alt="">
+          </div>
+          <div class="letter-container">
+            <img src="https://woman-gu.ru/wp-content/uploads/2018/11/thanks-for-good-work-2.jpg" alt="">
+          </div>
+          <div class="letter-container">
+            <img src="https://woman-gu.ru/wp-content/uploads/2018/11/thanks-for-good-work-2.jpg" alt="">
+          </div>
+          <div class="letter-container">
+            <img src="https://woman-gu.ru/wp-content/uploads/2018/11/thanks-for-good-work-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-container">
+    <div class="footer">
+      <section class="info">
+        <div class="logo">
+          <a href="/"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
+        </div>
+        <div class="city">
+          <i class="fas fa-map-marker-alt"></i>
+          Ваш город:
+          <b>Москва</b>
+        </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
+        </div>
+        <div class="phone">
+          <i class="fas fa-phone-volume"></i>
+          <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
+        </div>
+      </section>
+      <section class="menu">
+        <div onclick="footerMenuShow(this)">меню <i class="fas fa-sort-down"></i></div>
+        <ul class="menu-list">
+          <li><a href="./main.html" class="common-link">главная</a></li>
+          <li><a href="#" class="common-link">о компании</a></li>
+          <li><a href="#" class="common-link">вакансии</a></li>
+          <li><a href="./catalog.html" class="common-link">каталог</a></li>
+          <li><a href="#" class="common-link">наши работы</a></li>
+          <li><a href="#" class="common-link">отзывы</a></li>
+          <li><a href="#" class="common-link">условия</a></li>
+          <li><a href="#" class="common-link">контакты</a></li>
+        </ul>
+      </section>
+      <section class="products-home">
+        <div onclick="footerMenuShow(this)">продукция для дома <i class="fas fa-sort-down"></i></div>
+        <ul class="products-home-list">
+          <li><a href="./catalog.html" class="common-link">кухни(коллекция)</a></li>
+          <li><a href="./catalog.html" class="common-link">шкафы-купе</a></li>
+          <li><a href="./catalog.html" class="common-link">детская мебель</a></li>
+          <li><a href="./catalog.html" class="common-link">мебель для ванной комнаты</a></li>
+          <li><a href="./catalog.html" class="common-link">мебель для спальни</a></li>
+          <li><a href="./catalog.html" class="common-link">стенки</a></li>
+          <li><a href="./catalog.html" class="common-link">гардеробные</a></li>
+          <li><a href="./catalog.html" class="common-link">раздвижные двери</a></li>
+          <li><a href="./catalog.html" class="common-link">зеркала и стекла</a></li>
+        </ul>
+      </section>
+      <section class="products-business">
+        <div onclick="footerMenuShow(this)">продукция для бизнеса <i class="fas fa-sort-down"></i></div>
+        <ul class="products-business-list">
+          <li><a href="./catalog.html" class="common-link">офисная мебель</a></li>
+          <li><a href="./catalog.html" class="common-link">ученическая мебель</a></li>
+          <li><a href="./catalog.html" class="common-link">торговое оборудование</a></li>
+          <li><a href="./catalog.html" class="common-link">стойки</a></li>
+        </ul>
+      </section>
+      <section class="subscription">
+        <div>подпишитесь на нас</div>
+        <form action="/">
+          <input placeholder="Ваш email" class="input-sub">
+          <button class="sub-button">Подписаться</button>
+        </form>
+        <div class="social-links">
+          <a href="/"><i class="fab fa-facebook-f"></i></a>
+          <a href="/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </section>
+    </div>
+  </footer>
+  <form action="#" class="callback-form">
+    <div class="name">Отправьте нам сообщение</div>
+    <input type="text" placeholder="Имя">
+    <input type="tel" placeholder="Телефон">
+    <input type="email" placeholder="Email">
+    <textarea cols=25>Ваш комментарий</textarea>
+    <button class="button-link">Отправить</button>
+    <div class="far fa-times close" onclick="callForm()"></div>
+  </form>
+
+  <script src="../js/map.js"></script>
+  <script src='../js/jquery-3-4-1.min.js'></script>
+  <script  src="../js/script.js"></script>
+
+</body>
+</html>

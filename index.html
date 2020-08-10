@@ -203,6 +203,7 @@
         </div>
         <div class="flex-row portfolio-body">
           <div class="portfolio-list">
+            <div class="portfolio-menu" onclick="footerMenuShow(this)">Меню <i class="fas fa-sort-down"></i></div>
             <ul class="categories-list">
               <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Кухни</a></li>
               <li class="category"><a href="./catalog-card.html" class="cat-link active"><span class="choosen"></span>Шкафы-купе</a></li>
@@ -216,8 +217,8 @@
               <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Стойки</a></li>
               <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Торговая мебель</a></li>
               <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Офисная мебель</a></li>
+              <li class="next-arrow"><a href="#"><i class="fal fa-long-arrow-down"></i></a></li>
             </ul>
-            <div class="next-arrow"><a href="#"><i class="fal fa-long-arrow-down"></i></a></div>
           </div>
           <div class="portfolio-images">
             <div class="image-container">
@@ -287,7 +288,7 @@
         </div>
       </section>
       <section class="benefits">
-        <div class="item">
+        <div class="item i-1">
           <h1>01</h1>
           <p>Многообразие дизайнерских решений</p>
         </div>
@@ -477,7 +478,6 @@
           STANNUM
         </div>
       </section>
-      </section>
       <section class="about-us">
         <div class="flex-row">
           <div class="about-project">
@@ -527,14 +527,14 @@
       </section>
       <section class="interesting">
         <div class="title flex-row">
-          <h1>Что-то интересное</h1>
+          <h1 class="title">Что-то интересное</h1>
           <div>
             <a href="./news" class="main-link active">Новости</a>
             <a href="#" class="main-link">Блог</a>
             <a href="./promotions" class="main-link">Акции</a>
           </div>
         </div>
-        <div class="flex-row">
+        <div class="article-mesh">
           <div class="article-item">
             <img src="https://img.topchinasupplier.com/file/upload/2020/03/14/New-Style-Modern-Design-Furniture-Wardrobe-Cabinet.jpg" alt="" class="item-image">
             <div class="item-info">
@@ -666,6 +666,7 @@
       <div class="far fa-times close" onclick="callForm()"></div>
     </form>
   </div>
+
   <!-- partial -->
   <script src='../js/jquery-3-4-1.min.js'></script>
   <script  src="../js/script.js"></script>

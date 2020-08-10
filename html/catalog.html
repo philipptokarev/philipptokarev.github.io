@@ -10,6 +10,7 @@
   <link rel='stylesheet' href='../slick-1.8.1/slick/slick.css'>
   <link rel='stylesheet' href='../slick-1.8.1/slick/slick-theme.css'>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../jquery-ui/jquery-ui.min.css">
 
 </head>
 <body>
@@ -102,6 +103,7 @@
       </div>
       <div class="content">
         <div class="filter">
+          <div class="filter-menu" onclick="catalogMenuShow(this)">Меню <i class="fas fa-sort-down"></i></div>
           <div class="filter-item">
             <div class="title">
               Фильтр
@@ -128,6 +130,19 @@
             <div class="flex-row"><a href="#" class="filter-link">Лофт</a>15</div>
             <div class="flex-row active"><a href="#" class="filter-link">Hi-tech</a>25</div>
             <div class="flex-row"><a href="#" class="filter-link">Модерн</a>35</div>
+          </div>
+          <div class="filter-item">
+            <div class="title">
+              Цена<span class="subtitle"> руб.</span>
+            </div>
+            <div class="polzunok-container-5">
+              <div class="flex-row">
+                <input type="text" class="polzunok-input-5-left" />
+                <div class="line"></div>
+                <input type="text" class="polzunok-input-5-right "/>
+              </div>
+              <div class="polzunok-5"></div>
+            </div>
           </div>
           <div class="filter-item">
             <div class="title">
@@ -285,7 +300,10 @@
     <div class="far fa-times close" onclick="callForm()"></div>
   </form>
 </div>
+
+</div>
   <script src='../js/jquery-3-4-1.min.js'></script>
+  <script src="../js/jquery-ui/jquery-ui.min.js"></script>
   <script  src="../js/script.js"></script>
 
 </body>
