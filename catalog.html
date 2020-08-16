@@ -15,293 +15,296 @@
 </head>
 <body>
   <div class="grid-container">
-  <header class="header">
-    <section class="info">
-      <div class="logo">
-        <a href="./main.html"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
-      </div>
-      <div class="city">
-            <i class="fas fa-map-marker-alt"  onclick="cityClick()"></i>
-            <span onclick="cityClick()">Ваш город:</span>
-            <b class="name" onclick="cityClick()">Москва</b>
-            <i class="fas fa-sort-down"  onclick="cityClick()"></i>
-            <div class="cityList">
-              <div onclick="chooseCity(this)">Москва</div>
-              <div onclick="chooseCity(this)">Санкт-Петербург</div>
-              <div onclick="chooseCity(this)">Казань</div>
-              <div onclick="chooseCity(this)">Екатеринбург</div>
-              <div onclick="chooseCity(this)">Нижний Новорогод</div>
-              <div onclick="chooseCity(this)">Сочи</div>
-              <div onclick="chooseCity(this)">Новосибирск</div>
-            </div>
-          </div>
-      <div class="email">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
-      </div>
-      <div class="phone">
-        <i class="fas fa-phone-volume"></i>
-        <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
-      </div>
-      <button class="order-call" onclick="callForm()">Заказать звонок</button>
-    </section>
-    <nav class="nav-bar">
-      <div class="nav-menu">
-        <i class="far fa-bars" onclick="menuClick()"></i>
-        <div class="menuShow" id="menuShort"  onclick="menuClick()">Меню</div>
-        <div class="menuHide" id="menuFull">
-          <a href="#" class="menu-link">О компании</a>
-          <a href="./promotions.html" class="menu-link">Акции</a>
-          <a href="./news.html" class="menu-link">Новости</a>
-          <a href="#" class="menu-link">Дизайнерам</a>
-          <a href="./delivery" class="menu-link">Доставка</a>
-          <a href="#" class="menu-link">Контакты</a>
+    <header class="header">
+      <section class="info">
+        <div class="logo">
+          <a href="./main.html"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
         </div>
-      </div>
-      <div class="nav-catalog-portfolio">
-        <a href="./catalog.html" class="common-link">Каталог</a>
-        <a href="#" class="common-link">Портфолио</a>
-      </div>
-      <div class="nav-search">
-        <i class="far fa-search"></i>
-        <input class="input-search" placeholder="Поиск">
-      </div>
-    </nav>
-  </header>
+        <div class="city">
+              <i class="fas fa-map-marker-alt"  onclick="cityClick()"></i>
+              <span onclick="cityClick()">Ваш город:</span>
+              <b class="name" onclick="cityClick()">Москва</b>
+              <i class="fas fa-sort-down"  onclick="cityClick()"></i>
+              <div class="cityList">
+                <div onclick="chooseCity(this)">Москва</div>
+                <div onclick="chooseCity(this)">Санкт-Петербург</div>
+                <div onclick="chooseCity(this)">Казань</div>
+                <div onclick="chooseCity(this)">Екатеринбург</div>
+                <div onclick="chooseCity(this)">Нижний Новорогод</div>
+                <div onclick="chooseCity(this)">Сочи</div>
+                <div onclick="chooseCity(this)">Новосибирск</div>
+              </div>
+            </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
+        </div>
+        <div class="phone">
+          <i class="fas fa-phone-volume"></i>
+          <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
+        </div>
+        <div class="head-search">
+          <i class="far fa-search"></i>
+          <input class="input-search" placeholder="Поиск">
+        </div>
+        <button class="order-call" onclick="callForm()">Заказать звонок</button>
+      </section>
+      <nav class="nav-bar">
+        <div class="nav-menu">
+          <i class="far fa-bars" onclick="menuClick()"></i>
+          <div class="menuShow" id="menuShort"  onclick="menuClick()">Меню</div>
+          <div class="menuHide" id="menuFull">
+            <a href="#" class="menu-link">О компании</a>
+            <a href="./promotions.html" class="menu-link">Акции</a>
+            <a href="./news.html" class="menu-link">Новости</a>
+            <a href="#" class="menu-link">Дизайнерам</a>
+            <a href="./delivery" class="menu-link">Доставка</a>
+            <a href="#" class="menu-link">Контакты</a>
+          </div>
+        </div>
+        <div class="nav-catalog-portfolio">
+          <a href="./catalog.html" class="common-link">Каталог</a>
+          <a href="#" class="common-link">Портфолио</a>
+        </div>
+        <div class="nav-search">
+          <i class="far fa-search"></i>
+          <input class="input-search" placeholder="Поиск">
+        </div>
+      </nav>
+    </header>
 
-  <main class="main">
-    <section class="catalog-container">
-      <div class="cat-breadcrumbs">
-        <img src="https://www.decorpot.com/images/mobile-kitchen.jpg" alt="" class="cat-img-background">
-        <nav class="crumbs">
-          <a href="/" class="crumb">Главная</a> / <a href="/" class="crumb">Каталог</a> / <a href="/" class="crumb">Для дома</a> / <a href="/" class="active crumb">Кухни и столешницы</a>
-        </nav>
-        <h1 class="title">Кухни и столшницы</h1>
-      </div>
-      <div class="types">
-        <div class="types-choose">
-          <div class="item item-home">
-            <div class="flex-row">
-              <div class="info">
-                <h1>Мебель для дома</h1>
-                3990 товаров
-              </div>
-              <a href="#" class="button-link">Показать</a>
-            </div>
-          </div>
-          <div class="item item-business">
-            <div class="flex-row">
-              <div class="info">
-                <h1>Мебель для бизнеса</h1>
-                1750 товаров
-              </div>
-              <a href="#" class="button-link">Показать</a>
-            </div>
-          </div>
+    <main class="main">
+      <section class="catalog-container">
+        <div class="cat-breadcrumbs">
+          <img src="https://www.decorpot.com/images/mobile-kitchen.jpg" alt="" class="cat-img-background">
+          <nav class="crumbs">
+            <a href="/" class="crumb">Главная</a> / <a href="/" class="crumb">Каталог</a> / <a href="/" class="crumb">Для дома</a> / <a href="/" class="active crumb">Кухни и столешницы</a>
+          </nav>
+          <h1 class="title">Кухни и столшницы</h1>
         </div>
-        <div class="types-background">STANNUM</div>
-      </div>
-      <div class="content">
-        <div class="filter">
-          <div class="filter-menu" onclick="catalogMenuShow(this)">Меню <i class="fas fa-sort-down"></i></div>
-          <div class="filter-item">
-            <div class="title">
-              Фильтр
-            </div>
-            <div class="flex-row"><a href="#" class="filter-link">Столешницы</a>5</div>
-            <div class="flex-row"><a href="#" class="filter-link">Кухни</a>15</div>
-            <div class="flex-row active"><a href="#" class="filter-link">Современные кухни</a>25</div>
-            <div class="flex-row"><a href="#" class="filter-link">Плитка</a>35</div>
-          </div>
-          <div class="filter-item">
-            <div class="title">
-              Материал
-            </div>
-            <div class="flex-row"><a href="#" class="filter-link">Дерево</a>5</div>
-            <div class="flex-row"><a href="#" class="filter-link">Металл</a>15</div>
-            <div class="flex-row active"><a href="#" class="filter-link">Камень</a>25</div>
-            <div class="flex-row"><a href="#" class="filter-link">Плитка</a>35</div>
-          </div>
-          <div class="filter-item">
-            <div class="title">
-              Стилистика
-            </div>
-            <div class="flex-row"><a href="#" class="filter-link">Классика</a>5</div>
-            <div class="flex-row"><a href="#" class="filter-link">Лофт</a>15</div>
-            <div class="flex-row active"><a href="#" class="filter-link">Hi-tech</a>25</div>
-            <div class="flex-row"><a href="#" class="filter-link">Модерн</a>35</div>
-          </div>
-          <div class="filter-item">
-            <div class="title">
-              Цена<span class="subtitle"> руб.</span>
-            </div>
-            <div class="polzunok-container-5">
+        <div class="types">
+          <div class="types-choose">
+            <div class="item item-home">
               <div class="flex-row">
-                <input type="text" class="polzunok-input-5-left" />
-                <div class="line"></div>
-                <input type="text" class="polzunok-input-5-right "/>
+                <div class="info">
+                  <h1>Мебель для дома</h1>
+                  3990 товаров
+                </div>
+                <a href="#" class="button-link">Показать</a>
               </div>
-              <div class="polzunok-5"></div>
+            </div>
+            <div class="item item-business">
+              <div class="flex-row">
+                <div class="info">
+                  <h1>Мебель для бизнеса</h1>
+                  1750 товаров
+                </div>
+                <a href="#" class="button-link">Показать</a>
+              </div>
             </div>
           </div>
-          <div class="filter-item">
-            <div class="title">
-              Заказ
+          <div class="types-background">STANNUM</div>
+        </div>
+        <div class="content">
+          <div class="filter">
+            <div class="filter-menu" onclick="catalogMenuShow(this)">Меню <i class="fas fa-sort-down"></i></div>
+            <div class="filter-item">
+              <div class="title">
+                Фильтр
+              </div>
+              <div class="flex-row"><a href="#" class="filter-link">Столешницы</a>5</div>
+              <div class="flex-row"><a href="#" class="filter-link">Кухни</a>15</div>
+              <div class="flex-row active"><a href="#" class="filter-link">Современные кухни</a>25</div>
+              <div class="flex-row"><a href="#" class="filter-link">Плитка</a>35</div>
             </div>
-            <div class="flex-row"><a href="#" class="filter-link">Есть в наличии</a>5</div>
-            <div class="flex-row active"><a href="#" class="filter-link">Под заказ</a>15</div>
+            <div class="filter-item">
+              <div class="title">
+                Материал
+              </div>
+              <div class="flex-row"><a href="#" class="filter-link">Дерево</a>5</div>
+              <div class="flex-row"><a href="#" class="filter-link">Металл</a>15</div>
+              <div class="flex-row active"><a href="#" class="filter-link">Камень</a>25</div>
+              <div class="flex-row"><a href="#" class="filter-link">Плитка</a>35</div>
+            </div>
+            <div class="filter-item">
+              <div class="title">
+                Стилистика
+              </div>
+              <div class="flex-row"><a href="#" class="filter-link">Классика</a>5</div>
+              <div class="flex-row"><a href="#" class="filter-link">Лофт</a>15</div>
+              <div class="flex-row active"><a href="#" class="filter-link">Hi-tech</a>25</div>
+              <div class="flex-row"><a href="#" class="filter-link">Модерн</a>35</div>
+            </div>
+            <div class="filter-item">
+              <div class="title">
+                Цена<span class="subtitle"> руб.</span>
+              </div>
+              <div class="polzunok-container-5">
+                <div class="flex-row">
+                  <input type="text" class="polzunok-input-5-left" />
+                  <div class="line"></div>
+                  <input type="text" class="polzunok-input-5-right "/>
+                </div>
+                <div class="polzunok-5"></div>
+              </div>
+            </div>
+            <div class="filter-item">
+              <div class="title">
+                Заказ
+              </div>
+              <div class="flex-row"><a href="#" class="filter-link">Есть в наличии</a>5</div>
+              <div class="flex-row active"><a href="#" class="filter-link">Под заказ</a>15</div>
+            </div>
+          </div>
+          <div class="results">
+            <div class="results-info">
+              <div class="item"><span class="total">507</span>Товаров найдено</div>
+              <div class="item">
+                <label class="container">
+                  Новинки
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="item">Сортировать по: <span class="sort">Имени</span></div>
+              <div class="item">Вывести на странице: <span class="sort">200 товаров</span></div>
+            </div>
+            <div class="results-items">
+              <div class="item">
+                <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
+                <div class="info">
+                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <div class="price">от 150 000 Руб.</div>
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
+                  <a href="#" class="button-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
+                <div class="info">
+                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <div class="price">от 150 000 Руб.</div>
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
+                  <a href="#" class="button-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
+                <div class="info">
+                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <div class="price">от 150 000 Руб.</div>
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
+                  <a href="#" class="button-link">Подробнее</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
+                <div class="info">
+                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <div class="price">от 150 000 Руб.</div>
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
+                  <a href="#" class="button-link">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="button-link">Загрузить еще</a>
           </div>
         </div>
-        <div class="results">
-          <div class="results-info">
-            <div class="item"><span class="total">507</span>Товаров найдено</div>
-            <div class="item">
-              <label class="container">
-                Новинки
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-            </div>
-            <div class="item">Сортировать по: <span class="sort">Имени</span></div>
-            <div class="item">Вывести на странице: <span class="sort">200 товаров</span></div>
-          </div>
-          <div class="results-items">
-            <div class="item">
-              <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
-              <div class="info">
-                <h1 class="name">Кухня "Modern 1"</h1>
-                <div class="price">от 150 000 Руб.</div>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
-                <a href="#" class="button-link">Подробнее</a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
-              <div class="info">
-                <h1 class="name">Кухня "Modern 1"</h1>
-                <div class="price">от 150 000 Руб.</div>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
-                <a href="#" class="button-link">Подробнее</a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
-              <div class="info">
-                <h1 class="name">Кухня "Modern 1"</h1>
-                <div class="price">от 150 000 Руб.</div>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
-                <a href="#" class="button-link">Подробнее</a>
-              </div>
-            </div>
-            <div class="item">
-              <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
-              <div class="info">
-                <h1 class="name">Кухня "Modern 1"</h1>
-                <div class="price">от 150 000 Руб.</div>
-                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
-                <a href="#" class="button-link">Подробнее</a>
-              </div>
+        <div class="seo">
+          <div class="seo-content">
+            <img src="https://i.pinimg.com/originals/1a/3c/12/1a3c12fb3e9bee6ef997cf294a2e6214.jpg" alt="">
+            <div>
+              <h1>Блок под СЕО</h1>
+              <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quos eum cum dignissimos, rem cupiditate ullam dolores explicabo excepturi voluptatibus?</p>
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus blanditiis culpa pariatur maiores. Et voluptate fugit, quidem eligendi, illum quibusdam reiciendis aliquam deserunt voluptatem numquam inventore. Eaque, quia itaque.</p>
             </div>
           </div>
-          <a href="#" class="button-link">Загрузить еще</a>
+          <div class="seo-background">STANNUM</div>
         </div>
-      </div>
-      <div class="seo">
-        <div class="seo-content">
-          <img src="https://i.pinimg.com/originals/1a/3c/12/1a3c12fb3e9bee6ef997cf294a2e6214.jpg" alt="">
-          <div>
-            <h1>Блок под СЕО</h1>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quos eum cum dignissimos, rem cupiditate ullam dolores explicabo excepturi voluptatibus?</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus blanditiis culpa pariatur maiores. Et voluptate fugit, quidem eligendi, illum quibusdam reiciendis aliquam deserunt voluptatem numquam inventore. Eaque, quia itaque.</p>
+      </section>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer">
+        <section class="info">
+          <div class="logo">
+            <a href="/"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
           </div>
-        </div>
-        <div class="seo-background">STANNUM</div>
+          <div class="city">
+            <i class="fas fa-map-marker-alt"></i>
+            Ваш город:
+            <b>Москва</b>
+          </div>
+          <div class="email">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
+          </div>
+          <div class="phone">
+            <i class="fas fa-phone-volume"></i>
+            <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
+          </div>
+        </section>
+        <section class="menu">
+          <div onclick="footerMenuShow(this)">меню <i class="fas fa-sort-down"></i></div>
+          <ul class="menu-list">
+            <li><a href="./main.html" class="common-link">главная</a></li>
+            <li><a href="#" class="common-link">о компании</a></li>
+            <li><a href="#" class="common-link">вакансии</a></li>
+            <li><a href="./catalog.html" class="common-link">каталог</a></li>
+            <li><a href="#" class="common-link">наши работы</a></li>
+            <li><a href="#" class="common-link">отзывы</a></li>
+            <li><a href="#" class="common-link">условия</a></li>
+            <li><a href="#" class="common-link">контакты</a></li>
+          </ul>
+        </section>
+        <section class="products-home">
+          <div onclick="footerMenuShow(this)">продукция для дома <i class="fas fa-sort-down"></i></div>
+          <ul class="products-home-list">
+            <li><a href="./catalog.html" class="common-link">кухни(коллекция)</a></li>
+            <li><a href="./catalog.html" class="common-link">шкафы-купе</a></li>
+            <li><a href="./catalog.html" class="common-link">детская мебель</a></li>
+            <li><a href="./catalog.html" class="common-link">мебель для ванной комнаты</a></li>
+            <li><a href="./catalog.html" class="common-link">мебель для спальни</a></li>
+            <li><a href="./catalog.html" class="common-link">стенки</a></li>
+            <li><a href="./catalog.html" class="common-link">гардеробные</a></li>
+            <li><a href="./catalog.html" class="common-link">раздвижные двери</a></li>
+            <li><a href="./catalog.html" class="common-link">зеркала и стекла</a></li>
+          </ul>
+        </section>
+        <section class="products-business">
+          <div onclick="footerMenuShow(this)">продукция для бизнеса <i class="fas fa-sort-down"></i></div>
+          <ul class="products-business-list">
+            <li><a href="./catalog.html" class="common-link">офисная мебель</a></li>
+            <li><a href="./catalog.html" class="common-link">ученическая мебель</a></li>
+            <li><a href="./catalog.html" class="common-link">торговое оборудование</a></li>
+            <li><a href="./catalog.html" class="common-link">стойки</a></li>
+          </ul>
+        </section>
+        <section class="subscription">
+          <div>подпишитесь на нас</div>
+          <form action="/">
+            <input placeholder="Ваш email" class="input-sub">
+            <button class="sub-button">Подписаться</button>
+          </form>
+          <div class="social-links">
+            <a href="/"><i class="fab fa-facebook-f"></i></a>
+            <a href="/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </section>
       </div>
-    </section>
-  </main>
-<footer class="footer-container">
-  <div class="footer">
-    <section class="info">
-      <div class="logo">
-        <a href="/"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
-      </div>
-      <div class="city">
-        <i class="fas fa-map-marker-alt"></i>
-        Ваш город:
-        <b>Москва</b>
-      </div>
-      <div class="email">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
-      </div>
-      <div class="phone">
-        <i class="fas fa-phone-volume"></i>
-        <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
-      </div>
-    </section>
-    <section class="menu">
-      <div onclick="footerMenuShow(this)">меню <i class="fas fa-sort-down"></i></div>
-      <ul class="menu-list">
-        <li><a href="./main.html" class="common-link">главная</a></li>
-        <li><a href="#" class="common-link">о компании</a></li>
-        <li><a href="#" class="common-link">вакансии</a></li>
-        <li><a href="./catalog.html" class="common-link">каталог</a></li>
-        <li><a href="#" class="common-link">наши работы</a></li>
-        <li><a href="#" class="common-link">отзывы</a></li>
-        <li><a href="#" class="common-link">условия</a></li>
-        <li><a href="#" class="common-link">контакты</a></li>
-      </ul>
-    </section>
-    <section class="products-home">
-      <div onclick="footerMenuShow(this)">продукция для дома <i class="fas fa-sort-down"></i></div>
-      <ul class="products-home-list">
-        <li><a href="./catalog.html" class="common-link">кухни(коллекция)</a></li>
-        <li><a href="./catalog.html" class="common-link">шкафы-купе</a></li>
-        <li><a href="./catalog.html" class="common-link">детская мебель</a></li>
-        <li><a href="./catalog.html" class="common-link">мебель для ванной комнаты</a></li>
-        <li><a href="./catalog.html" class="common-link">мебель для спальни</a></li>
-        <li><a href="./catalog.html" class="common-link">стенки</a></li>
-        <li><a href="./catalog.html" class="common-link">гардеробные</a></li>
-        <li><a href="./catalog.html" class="common-link">раздвижные двери</a></li>
-        <li><a href="./catalog.html" class="common-link">зеркала и стекла</a></li>
-      </ul>
-    </section>
-    <section class="products-business">
-      <div onclick="footerMenuShow(this)">продукция для бизнеса <i class="fas fa-sort-down"></i></div>
-      <ul class="products-business-list">
-        <li><a href="./catalog.html" class="common-link">офисная мебель</a></li>
-        <li><a href="./catalog.html" class="common-link">ученическая мебель</a></li>
-        <li><a href="./catalog.html" class="common-link">торговое оборудование</a></li>
-        <li><a href="./catalog.html" class="common-link">стойки</a></li>
-      </ul>
-    </section>
-    <section class="subscription">
-      <div>подпишитесь на нас</div>
-      <form action="/">
-        <input placeholder="Ваш email" class="input-sub">
-        <button class="sub-button">Подписаться</button>
-      </form>
-      <div class="social-links">
-        <a href="/"><i class="fab fa-facebook-f"></i></a>
-        <a href="/"><i class="fab fa-instagram"></i></a>
-      </div>
-    </section>
+    </footer>
+
+    <form action="#" class="callback-form">
+      <div class="name">Отправьте нам сообщение</div>
+      <input type="text" placeholder="Имя">
+      <input type="tel" placeholder="Телефон">
+      <input type="email" placeholder="Email">
+      <textarea cols=25>Ваш комментарий</textarea>
+      <button class="button-link">Отправить</button>
+      <div class="far fa-times close" onclick="callForm()"></div>
+    </form>
   </div>
-</footer>
 
-
-  <form action="#" class="callback-form">
-    <div class="name">Отправьте нам сообщение</div>
-    <input type="text" placeholder="Имя">
-    <input type="tel" placeholder="Телефон">
-    <input type="email" placeholder="Email">
-    <textarea cols=25>Ваш комментарий</textarea>
-    <button class="button-link">Отправить</button>
-    <div class="far fa-times close" onclick="callForm()"></div>
-  </form>
-</div>
-
-</div>
   <script src='../js/jquery-3-4-1.min.js'></script>
   <script src="../js/jquery-ui/jquery-ui.min.js"></script>
   <script  src="../js/script.js"></script>
