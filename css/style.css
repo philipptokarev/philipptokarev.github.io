@@ -133,11 +133,15 @@ body a {
     margin: 0 -10px;
   }
   .main .header-container .main-slider .arrow-right, .main .header-container .main-slider .arrow-left {
-    position: relative;
-    right: 72px;
+    position: absolute;
+    top: unset;
+    bottom: -20px;
+  }
+  .main .header-container .main-slider .arrow-left {
+    left: 20px;
   }
   .main .header-container .main-slider .arrow-right {
-    left: calc(100% - 72px);
+    right: 20px;
   }
   .main .header-container .main-slider .numeration {
     display: none;
@@ -1325,7 +1329,7 @@ body a {
 }
 .main .portfolio .portfolio-body {
   max-width: 1100px;
-  margin: 0 auto 50px;
+  margin: 0 auto;
 }
 .main .portfolio .portfolio-body .portfolio-list {
   width: 25%;
@@ -3221,6 +3225,7 @@ body a {
 @media (max-width: 1100px) {
   .main .about-company .thanks-letters .letters-mesh {
     grid-template-columns: 1fr;
+    grid-gap: 5vw;
   }
   .main .about-company .thanks-letters .letters-mesh .letters-info {
     width: 100%;
