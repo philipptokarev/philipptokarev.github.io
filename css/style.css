@@ -26,6 +26,7 @@ body a {
 .main .header-container .main-slider .arrow-right, .main .header-container .main-slider .arrow-left {
   font-size: 50px;
   right: 25%;
+  height: 61px;
   position: absolute;
   top: calc(50% - 200px);
   color: black;
