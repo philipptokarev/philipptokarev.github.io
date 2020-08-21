@@ -15,14 +15,12 @@
 <body>
 <!-- partial:index.partial.html -->
   <div class="grid-container">
-    <main class="main">
-      <div class="header-container">
-        <header class="main-header">
-          <section class="info">
-            <div class="logo">
-              <a href="./main.html"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
-            </div>
-            <div class="city">
+    <header class="header">
+      <section class="info">
+        <div class="logo">
+          <a href="./main.html"><img src="https://i.ibb.co/FXj8whp/1.png" alt="1" class="logo-img"></a>
+        </div>
+        <div class="city">
               <i class="fas fa-map-marker-alt"  onclick="cityClick()"></i>
               <span onclick="cityClick()">Ваш город:</span>
               <b class="name" onclick="cityClick()">Москва</b>
@@ -37,557 +35,86 @@
                 <div onclick="chooseCity(this)">Новосибирск</div>
               </div>
             </div>
-            <div class="email">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
-            </div>
-            <div class="phone">
-              <i class="fas fa-phone-volume"></i>
-              <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
-            </div>
-            <div class="head-search">
-              <i class="far fa-search"></i>
-              <input class="input-search" placeholder="Поиск">
-            </div>
-            <button class="order-call" onclick="callForm()">Заказать звонок</button>
-          </section>
-          <nav class="nav-bar">
-            <div class="nav-menu">
-              <i class="far fa-bars" onclick="menuClick()"></i>
-              <div class="menuShow" id="menuShort"  onclick="menuClick()">Меню</div>
-              <div class="menuHide" id="menuFull">
-                <a href="#" class="menu-link">О компании</a>
-                <a href="./promotions.html" class="menu-link">Акции</a>
-                <a href="./news.html" class="menu-link">Новости</a>
-                <a href="#" class="menu-link">Дизайнерам</a>
-                <a href="#" class="menu-link">доставка</a>
-                <a href="#" class="menu-link">Контакты</a>
-              </div>
-            </div>
-            <div class="nav-catalog-portfolio">
-              <a href="./catalog" class="common-link">Каталог</a>
-              <a href="./catalog" class="common-link">Портфолио</a>
-            </div>
-            <div class="nav-search">
-              <i class="far fa-search"></i>
-              <input class="input-search" placeholder="Поиск">
-            </div>
-          </nav>
-        </header>
-        <div class="main-slider">
-          <img src="" alt="" class="background-slider">
-          <div id="slider">
-            <section class="slider-block flex-row">
-              <div class="slider-description">
-                <h1 class="title">Производство мебели</h1>
-                <p class="text">На сегодняшний день "Станнум - это идущее в ногу со временем и успешно развивающаяся компания, которая изготавливает и реализует мебель на заказ высокого качества."</p>
-                <a href="/" class="link">Подробнее <span class="arrow">&#10230;</span>
-                </a>
-              </div>
-              <img class="slider-image"  src="https://i7.pngflow.com/pngimage/887/224/png-automotive-design-car-sketch-design-angle-furniture-text-rectangle-clipart.png" alt="">
-              <span id="bg-image-1" style="display: none;">https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?size=626&ext=jpg</span>
-            </section>
-            <section class="slider-block flex-row">
-              <div class="slider-description">
-                <h1 class="title">Производство мебели1</h1>
-                <p class="text">На сегодняшний день "Станнум - это идущее в ногу со временем и успешно развивающаяся компания, которая изготавливает и реализует мебель на заказ высокого качества."</p>
-                <a href="/" class="link">Подробнее <span class="arrow">&#10230;</span>
-                </a>
-              </div>
-              <img class="slider-image"  src="https://i7.pngflow.com/pngimage/887/224/png-automotive-design-car-sketch-design-angle-furniture-text-rectangle-clipart.png" alt="">
-              <span id="bg-image-2" style="display: none;">https://i.pinimg.com/originals/13/20/35/13203559c6c0264980b1ae6afdb2ed63.jpg</span>
-            </section>
-            <section class="slider-block flex-row">
-              <div class="slider-description">
-                <h1 class="title">Производство мебели2</h1>
-                <p class="text">На сегодняшний день "Станнум - это идущее в ногу со временем и успешно развивающаяся компания, которая изготавливает и реализует мебель на заказ высокого качества."</p>
-                <a href="/" class="link">Подробнее <span class="arrow">&#10230;</span>
-                </a>
-              </div>
-              <img class="slider-image"  src="https://i7.pngflow.com/pngimage/887/224/png-automotive-design-car-sketch-design-angle-furniture-text-rectangle-clipart.png" alt="">
-              <span id="bg-image-3" style="display: none;">https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?size=626&ext=jpg</span>
-            </section>
-          </div>
-          <span class="arrow-right">&#10230;</span>
-          <span class="arrow-left">&#10229;</span>
-          <div class="numeration">
-            <span class="pagingInfo"></span>
-            <span class="amount"></span>
-          </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto: director@stannum.com" class="common-link">director@stannum.com</a>
         </div>
-      </div>
-      <section class="catalog">
-        <div class="flex-row catalog-links">
-          <a href="./catalog" class="main-link active">Мебель для дома</a>
-          <a href="./catalog" class="main-link">Мебель для бизнеса</a>
+        <div class="phone">
+          <i class="fas fa-phone-volume"></i>
+          <a href="tel:8(999)192929"  class="common-link">8(999)192929</a>
         </div>
-        <div class="catalog-items-container">
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
-          <div class="catalog-item">
-            <div class="catalog-image">
-              <div class="catalog-link">
-                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                <a class="active-catalog-link" href="./catalog-card.html">Перейти в каталог</a>
-              </div>
-            </div>
-            <div class="catalog-block">
-              <h1 class="title">Комоды и тумбы</h1>
-              <p>от <span class="price">20 000</span> р.</p>
-            </div>
-          </div>
+        <div class="head-search">
+          <i class="far fa-search"></i>
+          <input class="input-search" placeholder="Поиск">
         </div>
-        <a href="./catalog" class="button-link">Перейти в каталог</a>
+        <button class="order-call" onclick="callForm()">Заказать звонок</button>
       </section>
+      <nav class="nav-bar">
+        <div class="nav-menu">
+          <i class="far fa-bars" onclick="menuClick()"></i>
+          <div class="menuShow" id="menuShort"  onclick="menuClick()">Меню</div>
+          <div class="menuHide" id="menuFull">
+            <a href="#" class="menu-link">О компании</a>
+            <a href="./promotions.html" class="menu-link">Акции</a>
+            <a href="./news.html" class="menu-link">Новости</a>
+            <a href="#" class="menu-link">Дизайнерам</a>
+            <a href="./delivery" class="menu-link">Доставка</a>
+            <a href="#" class="menu-link">Контакты</a>
+          </div>
+        </div>
+        <div class="nav-catalog-portfolio">
+          <a href="./catalog.html" class="common-link">Каталог</a>
+          <a href="#" class="common-link">Портфолио</a>
+        </div>
+        <div class="nav-search">
+          <i class="far fa-search"></i>
+          <input class="input-search" placeholder="Поиск">
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <nav class="breadcrumbs">
+        <a href="./main.html" class="crumb">Главная</a> / <a href="#" class="active crumb">Портфолио</a>
+      </nav>
       <section class="portfolio">
-        <div class="title flex-row">
-          <h1>Портфолио</h1>
-          <div class="portfolio-links">
-            <a href=".catalog" class="main-link active">Для дома</a>
-            <a href=".catalog" class="main-link">Для бизнеса</a>
+        <div class="portfolio-title">
+          <h1 class="title">Портфолио</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus culpa ipsam, omnis sit. Eligendi a quidem voluptatibus, quaerat id obcaecati!</p>
+        </div>
+        <div class="portfolio-choose">
+          <div class="img-container">
+            <img src="https://previews.123rf.com/images/bialasiewicz/bialasiewicz1501/bialasiewicz150100785/35522122-beauty-modern-kitchen-interior-with-white-furniture.jpg" alt="">
+          </div>
+          <div class="choose">
+            <div class="title">Для дома</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nam perferendis sint doloremque, facere, rem sed magni ex, fuga quae ipsam mollitia impedit ea nisi. Officiis neque obcaecati, beatae atque?</p>
+            <a href="#" class="button-link">Смотреть</a>
           </div>
         </div>
-        <div class="flex-row portfolio-body">
-          <div class="portfolio-list">
-            <div class="portfolio-menu" onclick="footerMenuShow(this)">Меню <i class="fas fa-sort-down"></i></div>
-            <ul class="categories-list">
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Кухни</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link active"><span class="choosen"></span>Шкафы-купе</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Гардеробные системы</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Раздвижные двери</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Прихожие</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Мебель для спальни</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Стенки, тумбочки комоды</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Десткая мебель</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Мебель для ванной</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Стойки</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Торговая мебель</a></li>
-              <li class="category"><a href="./catalog-card.html" class="cat-link"><span class="choosen"></span>Офисная мебель</a></li>
-              <li class="next-arrow"><a href="#"><i class="fal fa-long-arrow-down"></i></a></li>
-            </ul>
+        <div class="portfolio-choose reverse">
+          <div class="img-container">
+            <img src="https://previews.123rf.com/images/bialasiewicz/bialasiewicz1501/bialasiewicz150100785/35522122-beauty-modern-kitchen-interior-with-white-furniture.jpg" alt="">
           </div>
-          <div class="portfolio-images">
-            <div class="image-container">
-              <img src="https://oscarsplacenyc.com/wp-content/uploads/2018/06/Beautiful-Modern-Living-Room-Furniture.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://www.pufikhomes.com/wp-content/uploads/2020/05/krasivyi-dom-dlya-semi-v-londone-pufikhomes-2.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://i.pinimg.com/736x/9e/c8/ae/9ec8ae079751bc4b6eecda0de1c66cfc.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://oscarsplacenyc.com/wp-content/uploads/2018/06/Beautiful-Modern-Living-Room-Furniture.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://www.pufikhomes.com/wp-content/uploads/2018/01/kvartira-v-kalininagrade-pufikhomes-1.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://tipsmake.com/data/images/the-design-of-a-beautiful-modern-small-living-room-picture-1-Di12EJaWN.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://i.pinimg.com/736x/9e/c8/ae/9ec8ae079751bc4b6eecda0de1c66cfc.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://oscarsplacenyc.com/wp-content/uploads/2018/06/Beautiful-Modern-Living-Room-Furniture.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
-            <div class="image-container">
-              <img src="https://www.pufikhomes.com/wp-content/uploads/2018/01/kvartira-v-kalininagrade-pufikhomes-1.jpg" alt="">
-              <div class="image-name">
-                <h1>Кухня Starnum-Top</h1>
-                <a href="./catalog-card.html" class="image-link">Подробнее <span class="arrow">&#10230;</span></a>
-              </div>
-            </div>
+          <div class="choose">
+            <div class="title">Для дома</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nam perferendis sint doloremque, facere, rem sed magni ex, fuga quae ipsam mollitia impedit ea nisi. Officiis neque obcaecati, beatae atque?</p>
+            <a href="#" class="button-link">Смотреть</a>
           </div>
         </div>
       </section>
-      <section class="benefits">
-        <div class="our">МЫ</div>
-        <div class="item i-1">
-          <h1>01</h1>
-          <p>Многообразие дизайнерских решений</p>
-        </div>
-        <div class="item i-2">
-          <h1>02</h1>
-          <p>1500 выполенных работ</p>
-        </div>
-        <div class="item i-3">
-          <h1>03</h1>
-          <p>Бесплатная доставка</p>
-        </div>
-        <div class="item i-4">
-          <h1>04</h1>
-          <p>Наличие кредитных программ</p>
-        </div>
-        <div class="item i-5">
-          <h1>05</h1>
-          <p>Короткие сроки исполения</p>
-        </div>
-      </section>
-      <section class="new-products">
-        <div class="title flex-row">
-          <h1>Новинки</h1>
-          <div class="new-arrows">
-            <span class="product-arrow-left">&#10229;</span>
-            <span class="product-arrow-right">&#10230;</span>
-          </div>
-        </div>
-        <div class="products-container">
-          <div class="flex-row catalog-links">
-            <a href="#" class="main-link active">Мебель для дома</a>
-            <a href="#" class="main-link">Мебель для бизнеса</a>
-          </div>
-          <div id="products-slider">
-            <section class="products-items-container">
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-            </section>
-            <section class="products-items-container">
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-image">
-                  <div class="catalog-link">
-                    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/amazon-rivet-furniture-1533048038.jpg" alt="">
-                    <a class="active-catalog-link" href="./catalog-card.html">Посмотреть</a>
-                  </div>
-                </div>
-                <div class="catalog-block">
-                  <h1 class="title">Комоды и тумбы</h1>
-                  <p>от <span class="price">20 000</span> р.</p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <div class="products-background">
-          STANNUM
-        </div>
-      </section>
-      <section class="about-us">
+      <section class="subscription">
+        <img src="https://i.ibb.co/C7jmyBc/Vektorny-smart-obekt1.png" alt="" class="mail">
+        <img src="https://i.ibb.co/615ZqJW/Vektorny-smart-obekt.png" alt="" class="plain">
         <div class="flex-row">
-          <div class="about-project">
-            <h1>Создаем <br>дизайн-проекты</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, molestiae error iusto harum fuga esse? Possimus, nisi cupiditate deleniti ut ipsam, cum esse ex modi explicabo, neque cumque quibusdam impedit?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A consequatur reiciendis eligendi quisquam, earum deserunt nam accusamus dignissimos assumenda, expedita ratione quae mollitia praesentium molestias?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti autem impedit id porro laudantium quo dolor, rerum aperiam maiores.</p>
-            <a href="#" class="button-link">Подробнее</a>
+          <div class="text">
+            Мы проводим акции для наших клиентов. Оформите подписку и будьте в курсе всех событий!
           </div>
-          <div id="about-team-slider">
-            <div>
-              <div class="flex-row">
-                <div class="team-info">
-                  <img src="https://i.ibb.co/FXj8whp/1.png" alt="1">
-                  <p class="full-name">Гимадеев Марс Васильевич</p>
-                  <p class="job">Директор</p>
-                  <a href="#" class="video">
-                    <i class="fal fa-play-circle"></i>
-                    Смотреть видео
-                  </a>
-                </div>
-                <div class="team-image"><img src="https://i.ibb.co/HnNqYNM/2020-05-21-21-37-28.png" alt=""></div>
-              </div>
-              <div class="clipped">director</div>
-            </div>
-            <div>
-              <div class="flex-row">
-                <div class="team-info">
-                  <img src="https://i.ibb.co/FXj8whp/1.png" alt="1">
-                  <p class="full-name">Гимадеев Марс Евгеньевич</p>
-                  <p class="job">Зам. Директора</p>
-                  <a href="#" class="video">
-                    <i class="fal fa-play-circle"></i>
-                    Смотреть видео
-                  </a>
-                </div>
-                <div class="team-image">
-                  <img src="https://i.pinimg.com/474x/5d/2e/2b/5d2e2b64c2cd88d0e417ea3f01829f17.jpg" alt="">
-                </div>
-              </div>
-              <div class="clipped">cto</div>
-            </div>
-          </div>
-          <span class="team-arrow-left">&#10229;</span>
-          <span class="team-arrow-right">&#10230;</span>
+          <form action="#" class="sub-form">
+            <input type="text" class="sub" placeholder="Ваш e-mail">
+            <a href="#" class="button-link">Подписаться</a>
+          </form>
         </div>
-      </section>
-      <section class="interesting">
-        <div class="title flex-row">
-          <h1 class="title">Что-то интересное</h1>
-          <div>
-            <a href="./news" class="main-link active">Новости</a>
-            <a href="#" class="main-link">Блог</a>
-            <a href="./promotions" class="main-link">Акции</a>
-          </div>
-        </div>
-        <div class="article-mesh">
-          <div class="article-item">
-            <img src="https://img.topchinasupplier.com/file/upload/2020/03/14/New-Style-Modern-Design-Furniture-Wardrobe-Cabinet.jpg" alt="" class="item-image">
-            <div class="item-info">
-              <p class="date">19.09.2020</p>
-              <h1 class="header">Успейте воспользоваться скидкой!!! Горячее предложение!</h1>
-              <p class="text">Кухонный гарнитур МДФ эмаль. Патина золото и сусальное золото(все цвета)</p>
-            </div>
-            <a href="" class="item-link">Перейти к статье</a>
-          </div>
-          <div class="article-item">
-            <img src="https://img.topchinasupplier.com/file/upload/2020/03/14/New-Style-Modern-Design-Furniture-Wardrobe-Cabinet.jpg" alt="" class="item-image">
-            <div class="item-info">
-              <p class="date">19.09.2020</p>
-              <h1 class="header">Успейте воспользоваться скидкой!!! Горячее предложение!</h1>
-              <p class="text">Кухонный гарнитур МДФ эмаль. Патина золото и сусальное золото(все цвета)</p>
-            </div>
-            <a href="./news-item" class="item-link">Перейти к статье</a>
-          </div>
-          <div class="article-item">
-            <img src="https://img.topchinasupplier.com/file/upload/2020/03/14/New-Style-Modern-Design-Furniture-Wardrobe-Cabinet.jpg" alt="" class="item-image">
-            <div class="item-info">
-              <p class="date">19.09.2020</p>
-              <h1 class="header">Успейте воспользоваться скидкой!!! Горячее предложение!</h1>
-              <p class="text">Кухонный гарнитур МДФ эмаль. Патина золото и сусальное золото(все цвета)</p>
-            </div>
-            <a href="./news-item" class="item-link">Перейти к статье</a>
-          </div>
-        </div>
-        <a href="./news" class="button-link">Все новости</a>
-      </section>
-      <section class="partners">
-        <div class="flex-row">
-          <div class="part-img">
-            <img src="http://mk-stannum.ru/wp-content/uploads/2016/06/LOGOTIP_SINIY_furnitura-kromki-fasadyi-svet.jpg" alt="">
-          </div>
-          <div class="part-img">
-            <img src="http://mk-stannum.ru/wp-content/uploads/2016/06/Logotip-TBM.jpg" alt="">
-          </div>
-          <div class="part-img">
-            <img src="http://mk-stannum.ru/wp-content/uploads/2016/06/LOGOTIP_SINIY_furnitura-kromki-fasadyi-svet.jpg" alt="">
-          </div>
-          <div class="part-img">
-            <img src="http://mk-stannum.ru/wp-content/uploads/2016/06/Logotip-TBM.jpg" alt="">
-          </div>
-          <div class="part-img">
-            <img src="http://mk-stannum.ru/wp-content/uploads/2016/06/LOGOTIP_SINIY_furnitura-kromki-fasadyi-svet.jpg" alt="">
-          </div>
-        </div>
-        <div class="partners-background"></div>
       </section>
     </main>
 
@@ -671,6 +198,7 @@
       <div class="far fa-times close" onclick="callForm()"></div>
     </form>
   </div>
+
 
   <!-- partial -->
   <script src='../js/jquery-3-4-1.min.js'></script>

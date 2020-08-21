@@ -1,4 +1,6 @@
-var city = "Выбор"
+var city = "Выбор";
+var $slickProducts = $('#products-slider.active');
+var $slickProductsTwo = $('#products-slider.two');
 
 function menuClick(){
   $(".nav-bar").toggleClass("nav-menu-show");
@@ -35,6 +37,40 @@ function chooseCity(el){
 function callForm(){
   $(".callback-form").toggleClass("show");
 }
+
+$(".tabs-links").on("click", "a:not(.active)", function() {
+  $(this)
+    .addClass("active")
+    .siblings()
+    .removeClass("active")
+    .closest(".tabs")
+    .find(".tab")
+    .removeClass("active")
+    .eq($(this).index())
+    .addClass("active");
+  if($(this).parent().parent().parent().attr('class') == 'new-products tabs')
+  {
+    if($slickProducts.hasClass('slick-initialized')){
+      $slickProducts.slick('unslick');
+      $slickProductsTwo.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.product-arrow-left'),
+        nextArrow: $('.product-arrow-right')
+      });
+    }
+    else{
+      $slickProductsTwo.slick('unslick');
+      $slickProducts.slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.product-arrow-left'),
+        nextArrow: $('.product-arrow-right')
+      });
+    }
+  }
+});
+
 
 $(".polzunok-5").slider({
   min: 0,

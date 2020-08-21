@@ -1,7 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-@import 'slick';
-@import 'slick-theme';
-body {
+﻿body {
   margin: 0;
   padding: 0;
 }
@@ -42,7 +39,6 @@ body a {
   left: 0;
   height: 850px;
   width: 80%;
-  max-width: 1275px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -136,7 +132,7 @@ body a {
   .main .header-container .main-slider .arrow-right, .main .header-container .main-slider .arrow-left {
     position: absolute;
     top: unset;
-    bottom: -20px;
+    bottom: -45px;
   }
   .main .header-container .main-slider .arrow-left {
     left: 20px;
@@ -319,7 +315,6 @@ body a {
   grid-template-areas: "menu catalog-portfolio search";
   grid-template-columns: 0.8fr 1.8fr 1.2fr;
   column-gap: 15px;
-  height: 40px;
   line-height: 40px;
   padding: 15px;
 }
@@ -372,6 +367,14 @@ body a {
 @media (max-width: 1100px) {
   .main .main-header .nav-bar .nav-menu .menuShow a.menu-link {
     margin-left: 0;
+  }
+}
+@media (max-width: 1550px) {
+  .main .main-header .nav-bar .nav-menu .menuShow {
+    flex-wrap: wrap;
+  }
+  .main .main-header .nav-bar .nav-menu .menuShow a.main-link {
+    flex: 1 1;
   }
 }
 .main .main-header .nav-bar .nav-menu .menuHide {
@@ -439,7 +442,7 @@ body a {
 }
 .main .main-header .nav-menu-show {
   grid-template-columns: auto;
-  width: 100vw;
+  width: calc(100vw - (100vw - 1020px)/2);
   background: rgba(0, 0, 0, 0.8);
   justify-content: start;
 }
@@ -1395,6 +1398,9 @@ body a {
   line-height: 0;
   width: 75%;
 }
+.main .portfolio .portfolio-body .portfolio-images.active {
+  display: block;
+}
 .main .portfolio .portfolio-body .portfolio-images .image-container {
   position: relative;
 }
@@ -1987,6 +1993,9 @@ body a {
     max-width: calc(100vw - 30px);
   }
 }
+.main .new-products #products-slider.tab:not(.active) {
+  display: none;
+}
 @media (max-width: 1100px) {
   .main .new-products {
     margin: 0 15px;
@@ -2435,7 +2444,7 @@ body a {
 .main .news .news-container .news-tags {
   grid-area: news-tags;
   box-shadow: 0px 7px 41px -30px black;
-  height: 440px;
+  height: fit-content;
   background: white;
 }
 .main .news .news-container .news-tags .title {
@@ -2466,6 +2475,7 @@ body a {
   border: none;
 }
 .main .news .news-container .news-tags .subscription {
+  height: auto;
   padding: 0;
   background: none;
   margin-top: 50px;
@@ -2746,6 +2756,7 @@ body a {
   color: #ccc;
 }
 .main .main-link:hover {
+  cursor: pointer;
   color: #dfa524;
 }
 .main .main-link.active {
@@ -3476,8 +3487,15 @@ body a {
 .main .subscription .flex-row > * {
   margin-right: 15px;
 }
-.main .subscription .flex-row > *:last-child {
-  margin-right: 0;
+.main .subscription .sub-form {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1100px) {
+  .main .subscription .sub-form {
+    flex-direction: column;
+    margin-right: auto;
+  }
 }
 .main .subscription .text {
   color: #fff;
@@ -3489,6 +3507,7 @@ body a {
   border: 1px solid #fff;
   border-radius: 5px;
   padding-left: 25px;
+  margin-right: 20px;
   background: none;
   color: #fff;
   font-size: 18px;
@@ -3807,6 +3826,12 @@ body a {
     grid-template-columns: 1fr;
     margin: 0 15px;
   }
+}
+.main .tabs .tab {
+  display: none;
+}
+.main .tabs .tab.active {
+  display: grid;
 }
 @media (max-width: 1100px) {
   .main .title {
@@ -4385,6 +4410,17 @@ body a {
   color: #b0821c;
   border: 3px solid #b0821c;
   cursor: pointer;
+}
+@media (max-width: 1100px) {
+  .callback-form .close {
+    top: -45px;
+    left: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .callback-form {
+    left: calc(50vw - 140px);
+  }
 }
 .callback-form.show {
   display: block;
