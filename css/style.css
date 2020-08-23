@@ -1,4 +1,7 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import 'slick';
+@import 'slick-theme';
+body {
   margin: 0;
   padding: 0;
 }
@@ -1333,7 +1336,7 @@ body a {
 }
 .main .portfolio .portfolio-body {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 .main .portfolio .portfolio-body .portfolio-list {
   width: 25%;
@@ -2464,6 +2467,7 @@ body a {
   font-weight: 500;
   box-sizing: border-box;
   height: 20px;
+  width: fit-content;
 }
 .main .news .news-container .news-tags .tags .link-tag:hover {
   border-bottom: 1px solid #dfa524;
@@ -2786,6 +2790,9 @@ body a {
 @media (max-width: 1100px) {
   .main .button-link {
     margin: 0;
+  }
+  .main .button-link.ml15 {
+    margin-left: 15px;
   }
 }
 .main .catalog-item {

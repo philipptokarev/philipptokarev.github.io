@@ -205,9 +205,25 @@
       <div class="far fa-times close" onclick="callForm()"></div>
     </form>
   </div>
+  <script type="text/javascript">
+    ymaps.ready(function () {
+      var address = "г. Казань, ул. Сулеймановой д. 7"
+      var hint = ymaps.geocode(address, {results: 1}).then(function (res) {
+        var object = res.geoObjects.get(0),
+        coords = object.geometry.getCoordinates();
+        var myMap = new ymaps.Map('map', {
+          center: coords,
+          zoom: 15,
+          controls: ['zoomControl', 'searchControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl']
+        });
+        myPlacemark = new ymaps.Placemark(coords, { hintContent: 'Станнум' });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.controls.add('zoomControl', { left: 5, top: 5 })
+      });
+    });
+  </script>
   <script src='../js/jquery-3-4-1.min.js'></script>
   <script  src="../js/script.js"></script>
-  <script  src="../js/map.js"></script>
 
 </body>
 </html>
