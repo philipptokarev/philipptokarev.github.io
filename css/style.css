@@ -1,7 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-@import 'slick';
-@import 'slick-theme';
-body {
+﻿body {
   margin: 0;
   padding: 0;
 }
@@ -773,6 +770,7 @@ body a {
   align-items: flex-start;
   width: calc(100% - 50px);
   margin: 0 25px;
+  z-index: 2;
 }
 .main .catalog-container .types .types-choose .item .flex-row .button-link {
   margin: 0;
@@ -794,11 +792,17 @@ body a {
     width: calc(100% - 30px);
   }
 }
-.main .catalog-container .types .types-choose .item-home {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent), url("https://www.shilpakalainteriors.in/images/gallery/Kitchen/K(1).jpg");
+.main .catalog-container .types .types-choose .item .bg-image img {
+  z-index: 0;
 }
-.main .catalog-container .types .types-choose .item-business {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent), url("https://skepp.com/assets/Uploads/HeaderImages/_resampled/ScaleWidthWyIxODAwIl0/Verlengde-poolseweg-38-Breda-6.jpg");
+.main .catalog-container .types .types-choose .item .bg-image .overlayed {
+  z-index: 1;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 1100px) {
   .main .catalog-container .types .types-choose {
@@ -955,6 +959,9 @@ body a {
   justify-content: space-between;
   align-items: center;
 }
+.main .catalog-container .content .results .results-info .item {
+  padding: 0 10px;
+}
 .main .catalog-container .content .results .results-info .item .container {
   display: block;
   position: relative;
@@ -1016,8 +1023,16 @@ body a {
   margin-right: 10px;
 }
 .main .catalog-container .content .results .results-info .sort {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  border: none;
+  background: #fff;
+  font-size: 16px;
   color: #dfa524;
   font-weight: 700;
+  cursor: pointer;
 }
 @media (max-width: 1100px) {
   .main .catalog-container .content .results .results-info {
@@ -1103,7 +1118,7 @@ body a {
   padding-left: 70px;
   width: 50%;
 }
-.main .catalog-container .seo .seo-content > div h1 {
+.main .catalog-container .seo .seo-content > div h2 {
   margin: 0;
   color: white;
   font-size: 40px;
@@ -1305,6 +1320,9 @@ body a {
   max-width: 1100px;
   width: 100%;
 }
+.main .portfolio .title .name {
+  font-size: 40px;
+}
 .main .portfolio .title.flex-row {
   align-items: center;
   justify-content: space-between;
@@ -1315,11 +1333,9 @@ body a {
     align-items: flex-start;
   }
 }
-.main .portfolio .title h1 {
-  font-size: 40px;
-}
-.main .portfolio .title h1.title-color {
+.main .portfolio .title .title-color {
   color: #dfa524;
+  font-size: 40px;
 }
 .main .portfolio .title .portfolio-links .main-link {
   border-width: 1px;
@@ -1583,20 +1599,20 @@ body a {
     align-items: flex-start;
   }
 }
-.main .portfolio #portfolio-slider {
+.main .portfolio #portfolio-slider, .main .portfolio .portfolio-slider {
   width: 75%;
 }
-.main .portfolio #portfolio-slider .portfolio-slide {
+.main .portfolio #portfolio-slider .portfolio-slide, .main .portfolio .portfolio-slider .portfolio-slide {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vw;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container, .main .portfolio .portfolio-slider .portfolio-slide .img-container {
   width: 100%;
   padding-top: 130%;
   position: relative;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container img {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container img, .main .portfolio .portfolio-slider .portfolio-slide .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1604,7 +1620,7 @@ body a {
   top: 0;
   left: 0;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name, .main .portfolio .portfolio-slider .portfolio-slide .img-container .image-name {
   width: 100%;
   height: 100%;
   background: rgba(223, 165, 36, 0.75);
@@ -1620,28 +1636,28 @@ body a {
   cursor: default;
   transition: opacity 0.2s;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name:hover {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name:hover, .main .portfolio .portfolio-slider .portfolio-slide .img-container .image-name:hover {
   opacity: 1;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name h1 {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name h1, .main .portfolio .portfolio-slider .portfolio-slide .img-container .image-name h1 {
   font-size: 20px;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name .image-link {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name .image-link, .main .portfolio .portfolio-slider .portfolio-slide .img-container .image-name .image-link {
   display: block;
   color: white;
   font-weight: 500;
   margin-top: 30px;
 }
-.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name .image-link:hover {
+.main .portfolio #portfolio-slider .portfolio-slide .img-container .image-name .image-link:hover, .main .portfolio .portfolio-slider .portfolio-slide .img-container .image-name .image-link:hover {
   color: #666;
 }
 @media (max-width: 1100px) {
-  .main .portfolio #portfolio-slider .portfolio-slide {
+  .main .portfolio #portfolio-slider .portfolio-slide, .main .portfolio .portfolio-slider .portfolio-slide {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 1100px) {
-  .main .portfolio #portfolio-slider {
+  .main .portfolio #portfolio-slider, .main .portfolio .portfolio-slider {
     width: calc(100vw - 30px);
   }
 }
@@ -1854,7 +1870,7 @@ body a {
 .main .benefits .item.i-1 {
   grid-area: i-1;
 }
-.main .benefits .item h1 {
+.main .benefits .item h2 {
   color: #dfa524;
   font-size: 40px;
   margin: 0;
@@ -1958,7 +1974,7 @@ body a {
   max-width: 1100px;
   margin: 0 auto 50px;
 }
-.main .new-products .title.flex-row h1 {
+.main .new-products .title.flex-row .name {
   font-size: 40px;
 }
 .main .new-products .title.flex-row > div {
@@ -2021,6 +2037,9 @@ body a {
   margin: 0 auto;
   justify-content: space-between;
   position: relative;
+}
+.main .about-us > .flex-row .about-project .name {
+  font-size: 40px;
 }
 .main .about-us > .flex-row .team-image {
   position: relative;
@@ -2135,7 +2154,7 @@ body a {
   margin: 0 auto 50px;
   width: 100%;
 }
-.main .interesting .title.flex-row h1 {
+.main .interesting .title.flex-row .name {
   font-size: 40px;
 }
 .main .interesting .title.flex-row .main-link:not(:last-child) {
@@ -3796,6 +3815,9 @@ body a {
   font-weight: 700;
   margin: 0;
 }
+.main .employees .employee-card .name .title:hover {
+  color: #666;
+}
 .main .employees .employee-card .name .position {
   color: #666;
 }
@@ -4007,7 +4029,6 @@ body a {
   grid-template-areas: "menu catalog-portfolio search";
   grid-template-columns: 0.8fr 1.8fr 1.2fr;
   column-gap: 15px;
-  height: 40px;
   line-height: 40px;
   padding: 15px;
 }
@@ -4060,6 +4081,14 @@ body a {
 @media (max-width: 1100px) {
   .header .nav-bar .nav-menu .menuShow a.menu-link {
     margin-left: 0;
+  }
+}
+@media (max-width: 1550px) {
+  .header .nav-bar .nav-menu .menuShow {
+    flex-wrap: wrap;
+  }
+  .header .nav-bar .nav-menu .menuShow a.main-link {
+    flex: 1 1;
   }
 }
 .header .nav-bar .nav-menu .menuHide {
@@ -4121,7 +4150,7 @@ body a {
 }
 .header .nav-menu-show {
   grid-template-columns: auto;
-  width: 100vw;
+  width: calc(100vw - (100vw - 1020px)/2);
   background: rgba(0, 0, 0, 0.8);
   justify-content: start;
 }
