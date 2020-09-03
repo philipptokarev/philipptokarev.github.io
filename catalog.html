@@ -84,19 +84,27 @@
         </div>
         <div class="types">
           <div class="types-choose">
-            <div class="item item-home">
+            <div class="item">
+              <div class="bg-image">
+                <img src="https://www.shilpakalainteriors.in/images/gallery/Kitchen/K(1).jpg" alt="">
+                <div class="overlayed"></div>
+              </div>
               <div class="flex-row">
                 <div class="info">
-                  <h1>Мебель для дома</h1>
+                  <h2>Мебель для дома</h2>
                   3990 товаров
                 </div>
                 <a href="#" class="button-link">Показать</a>
               </div>
             </div>
-            <div class="item item-business">
+            <div class="item">
+              <div class="bg-image">
+                <img src="https://skepp.com/assets/Uploads/HeaderImages/_resampled/ScaleWidthWyIxODAwIl0/Verlengde-poolseweg-38-Breda-6.jpg" alt="">
+                <div class="overlayed"></div>
+              </div>
               <div class="flex-row">
                 <div class="info">
-                  <h1>Мебель для бизнеса</h1>
+                  <h2>Мебель для бизнеса</h2>
                   1750 товаров
                 </div>
                 <a href="#" class="button-link">Показать</a>
@@ -166,14 +174,26 @@
                   <span class="checkmark"></span>
                 </label>
               </div>
-              <div class="item">Сортировать по: <span class="sort">Имени</span></div>
-              <div class="item">Вывести на странице: <span class="sort">200 товаров</span></div>
+              <div class="item">Сортировать по:
+                <select name="select" class="sort">
+                  <option value="value1">Имени</option>
+                  <option value="value2">Дате</option>
+                  <option value="value3">Типу</option>
+                </select>
+              </div>
+              <div class="item">Вывести на странице:
+                <select name="select" class="sort">
+                  <option value="value1">50 товаров</option>
+                  <option value="value2">100 товаров</option>
+                  <option value="value3">200 товаров</option>
+                </select>
+              </div>
             </div>
             <div class="results-items">
               <div class="item">
                 <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
                 <div class="info">
-                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <h2 class="name">Кухня "Modern 1"</h2>
                   <div class="price">от 150 000 Руб.</div>
                   <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
                   <a href="#" class="button-link">Подробнее</a>
@@ -182,7 +202,7 @@
               <div class="item">
                 <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
                 <div class="info">
-                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <h2 class="name">Кухня "Modern 1"</h2>
                   <div class="price">от 150 000 Руб.</div>
                   <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
                   <a href="#" class="button-link">Подробнее</a>
@@ -191,7 +211,7 @@
               <div class="item">
                 <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
                 <div class="info">
-                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <h2 class="name">Кухня "Modern 1"</h2>
                   <div class="price">от 150 000 Руб.</div>
                   <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
                   <a href="#" class="button-link">Подробнее</a>
@@ -200,7 +220,7 @@
               <div class="item">
                 <img src="https://www.arch2o.com/wp-content/uploads/2018/10/Arch2O-OLX-Office-Interior-Desig-Design-Hub-International-12.jpg" alt="">
                 <div class="info">
-                  <h1 class="name">Кухня "Modern 1"</h1>
+                  <h2 class="name">Кухня "Modern 1"</h2>
                   <div class="price">от 150 000 Руб.</div>
                   <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sed quos accusamus itaque voluptatibus est atque corrupti voluptate magnam temporibus.</p>
                   <a href="#" class="button-link">Подробнее</a>
@@ -214,7 +234,7 @@
           <div class="seo-content">
             <img src="https://i.pinimg.com/originals/1a/3c/12/1a3c12fb3e9bee6ef997cf294a2e6214.jpg" alt="">
             <div>
-              <h1>Блок под СЕО</h1>
+              <h2>Блок под СЕО</h2>
               <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quos eum cum dignissimos, rem cupiditate ullam dolores explicabo excepturi voluptatibus?</p>
               <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus blanditiis culpa pariatur maiores. Et voluptate fugit, quidem eligendi, illum quibusdam reiciendis aliquam deserunt voluptatem numquam inventore. Eaque, quia itaque.</p>
             </div>
@@ -299,7 +319,7 @@
       <input type="text" placeholder="Имя">
       <input type="tel" placeholder="Телефон">
       <input type="email" placeholder="Email">
-      <textarea cols=25>Ваш комментарий</textarea>
+      <textarea placeholder="Ваш комментарий" cols=25></textarea>
       <button class="button-link">Отправить</button>
       <div class="far fa-times close" onclick="callForm()"></div>
     </form>
