@@ -5,10 +5,8 @@
     font-style: normal;
 }
 */
-body.is_ios {
-  :lang(ru){
+body.is_ios:lang(ru){
     font-family: Montserrat;
-  }
 }
 body{
   margin: 0;
