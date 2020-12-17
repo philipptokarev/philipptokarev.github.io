@@ -5,11 +5,12 @@
     font-style: normal;
 }
 */
-* {
-  -webkit-locale: auto;
-  white-space: normal;
+body.is_ios {
+  :lang(ru){
+    font-family: Montserrat;
+  }
 }
-body {
+body{
   margin: 0;
   padding: 0;
 }
